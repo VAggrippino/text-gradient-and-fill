@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+
 :root {
     --gradient: linear-gradient(225deg, transparent, black);
     --gradient2: linear-gradient(to right,
@@ -51,10 +53,18 @@ p {
 .background-clip-gif .demo {
     background-image: url('images/flag.gif');
     background-clip: text;
-    background-size: 100%;
+    background-size: 25%;
     background-position: left;
     -webkit-background-clip: text;
     color: transparent;
+
+    /* Make it stand out */
+    font-family: 'Erica One', 'Arial Black', cursive;
+    font-size: 8.5vw;
+    font-variant: small-caps;
+    line-height: 1;
+    -webkit-text-stroke: 1px black;
+    width: auto
 }
 
 @keyframes animate {
