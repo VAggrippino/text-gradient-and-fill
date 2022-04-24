@@ -9,6 +9,22 @@
         red, orange, yellow, green, blue, purple);
 }
 
+* { box-sizing: border-box; }
+
+.notice {
+    background-color: palegoldenrod;
+    padding: 1rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 1rem;
+    width: 15rem;
+}
+
+.notice h1 {
+    margin: 0;
+}
+
 body {
     font-family: sans-serif;
 }
@@ -51,7 +67,7 @@ p {
 }
 
 .background-clip-gif .demo {
-    background-image: url('images/flag.gif');
+    background-image: url('https://vaggrippino.github.io/text-gradient-and-fill/images/flag.gif');
     background-clip: text;
     background-size: 25%;
     background-position: left;
