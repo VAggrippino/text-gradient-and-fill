@@ -1,10 +1,10 @@
 :root {
     --gradient: linear-gradient(225deg, transparent, black);
     --gradient2: linear-gradient(to right,
-            /* This combination makes the animation look continuous. */
-            purple,
-            red, orange, yellow, green, blue, purple,
-            red, orange, yellow, green, blue, purple);
+        /* This combination makes the animation look continuous. */
+        purple,
+        red, orange, yellow, green, blue, purple,
+        red, orange, yellow, green, blue, purple);
 }
 
 body {
@@ -46,6 +46,15 @@ p {
 
 .background-clip #animate:checked ~ .demo {
     animation: animate 5s infinite linear;
+}
+
+.background-clip-gif .demo {
+    background-image: url('images/flag.gif');
+    background-clip: text;
+    background-size: 100%;
+    background-position: left;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 @keyframes animate {
