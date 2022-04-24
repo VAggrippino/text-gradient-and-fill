@@ -12,7 +12,7 @@
 * { box-sizing: border-box; }
 
 .notice {
-    background-color: gold;
+    background-color: lightblue;
     padding: 1rem;
     position: fixed;
     top: 2rem;
