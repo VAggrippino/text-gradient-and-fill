@@ -12,17 +12,41 @@
 * { box-sizing: border-box; }
 
 .notice {
-    background-color: palegoldenrod;
+    background-color: gold;
     padding: 1rem;
     position: fixed;
     top: 2rem;
     right: 2rem;
     border-radius: 1rem;
-    width: 15rem;
+    width: 25rem;
+    z-index: 100;
+    box-shadow: 1px 1px 3px silver;
+
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "title title"
+        "description links";
 }
 
 .notice h1 {
+    grid-area: title;
     margin: 0;
+}
+
+.notice p {
+    grid-area: description;
+    margin: 0;
+}
+
+.notice ul {
+    margin: 0;
+    padding: 0;
+    grid-area: links;
+
+    align-self: center;
 }
 
 body {
