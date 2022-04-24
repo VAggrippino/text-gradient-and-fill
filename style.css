@@ -75,10 +75,12 @@ main section + section {
 }
 
 .demo {
-    width: 7em;
-    font-size: 5rem;
-    font-weight: bold;
-    font-family: 'Arial Black', sans-serif;
+    font-family: 'Erica One', 'Arial Black', cursive;
+    font-size: 8vw;
+    width: 8ch;
+    font-variant: small-caps;
+    line-height: 1;
+    -webkit-text-stroke: 1px black;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -115,14 +117,8 @@ main section + section {
     -webkit-background-clip: text;
     color: transparent;
 
-    /* Make it stand out */
-    font-family: 'Erica One', 'Arial Black', cursive;
-    font-size: 8vw;
-    font-weight: normal;
-    font-variant: small-caps;
-    line-height: 1;
-    -webkit-text-stroke: 1px black;
-    width: auto
+    /* This can be wider than the others because the background is handled differently. */
+    width: auto;
 }
 
 @keyframes animate {
