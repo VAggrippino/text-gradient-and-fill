@@ -57,6 +57,19 @@ p {
     max-width: 35rem;
 }
 
+header, main {
+    margin: 0 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main section + section {
+    border-top: 3px groove silver;
+}
+
 .mdnlink {
     font-family: monospace;
 }
@@ -86,7 +99,11 @@ p {
     padding: 0;
 }
 
-.background-clip #animate:checked ~ .demo {
+.animate {
+    margin-right: 1rem;
+}
+
+.background-clip .animate:checked ~ .demo {
     animation: animate 5s infinite linear;
 }
 
@@ -100,7 +117,8 @@ p {
 
     /* Make it stand out */
     font-family: 'Erica One', 'Arial Black', cursive;
-    font-size: 8.5vw;
+    font-size: 8vw;
+    font-weight: normal;
     font-variant: small-caps;
     line-height: 1;
     -webkit-text-stroke: 1px black;
