@@ -28,12 +28,12 @@ p {
     overflow: hidden;
 }
 
-.mask-image {
+.mask-image .demo {
     mask-image: var(--gradient);
     -webkit-mask-image: var(--gradient);
 }
 
-.background-clip {
+.background-clip .demo {
     background: var(--gradient2);
     background-size: 200%;
     background-clip: text;
@@ -44,7 +44,7 @@ p {
     padding: 0;
 }
 
-#animate:checked~.background-clip {
+.background-clip #animate:checked ~ .demo {
     animation: animate 5s infinite linear;
 }
 

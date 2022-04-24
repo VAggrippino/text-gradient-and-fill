@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,38 @@
     <title>Text Gradient and Fill Effects</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Text Gradient</h1>
-    <h2>Using
-        <a class="mdnlink" target="_blank"
-            href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image">mask-image</a>:
-    </h2>
-    <div class="demo mask-image">Hello World</div>
-    <p>
-        The transparent parts of <code>mask-image</code> become
-        transparent parts of the text.
-    </p>
 
-    <h2>Using
-        <a class="mdnlink" target="_blank"
-            href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip">background-clip</a> with transparent
-        text:
-    </h2>
-    <input id="animate" type="checkbox"><label for="animate">Animate It!</label>
-    <div class="demo background-clip">Hello World</div>
-    <p>
-        The text is invisible and the background is
-        <em>clipped</em> to the text. So, it only shows where the
-        text is. This allows the effect to be applied with colored
-        gradients and animation.<br>
-    </p>
+<body>
+    <header>
+        <h1>Text Gradient</h1>
+    </header>
+    <main>
+        <section class="mask-image">
+            <h2>Using
+                <a class="mdnlink" target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image">mask-image</a>:
+            </h2>
+            <div class="demo">Hello World</div>
+            <p>
+                The transparent parts of <code>mask-image</code> become
+                transparent parts of the text.
+            </p>
+        </section>
+        <section class="background-clip">
+            <h2>
+                Using
+                <a class="mdnlink" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip">background-clip</a>
+                with transparent text:
+            </h2>
+            <input id="animate" type="checkbox"><label for="animate">Animate It!</label>
+            <div class="demo">Hello World</div>
+            <p>
+                The text is invisible and the background is <em>clipped</em> to the
+                text. So, it only shows where the text is. This allows the effect to
+                be applied with colored gradients and animation.
+            </p>
+        </section>
+    </main>
 </body>
+
 </html>
